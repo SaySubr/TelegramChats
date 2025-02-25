@@ -1,0 +1,31 @@
+{
+  "model": {
+    "checkpoint": "sdxl-v1.0",
+    "lora": {
+      "enabled": true,
+      "path": "./lora_models/anime_style.safetensors",
+      "scale": 0.8
+    }
+  },
+  "resolution": {
+    "width": 768,
+    "height": 768
+  },
+  "guidance_scale": 7.5,
+  "steps": 50,
+  "seed": 12345,
+  "sampler": "DPM++ 2M Karras",
+  "strength": 0.75,
+  "scale": 1.0,
+  "input": {
+    "text": "",
+    "negative_text": "EasyNegariveV2, (low quality:1.32), (normal quality:1.31),(worst quality:1.33),(bad anatomy), (bad Hands), (mutated Limbs:1.2), (Mutated Hands, Mutated fingers:1.2),
+(deformed hands:1.2),(text:1.5), simple backgound, watermark, BadDream, unrealisticDream, pimple,pimples, freckle, freckles, impurities, signature, artist signature,
+error,censored,bar censor, text, speech bubble, unspeakable-horrors-Composition-4v,verybadimagenegarive_v1.3,badhandv4,negative_hand-heg,bad_promt_version2-neg"
+  },
+  "output": {
+    "format": "png",
+    "save": true,
+    "path": "./generated_images"
+  }
+}
