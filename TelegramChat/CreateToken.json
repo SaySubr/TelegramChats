@@ -1,0 +1,7 @@
+1. Для работы Телеграм бота создаем в ручную appsettings.json 
+2. Помещаем его в папку с exe.файлом (/bin/debug/net8.0)
+3. В файле appsettings.json прописывает свой токен.
+или 4. стираем 4 пунка и вставляем свой токен и помещаем в папку с exe.файлом (/bin/debug/net8.0) 
+{
+  "TelegramBotToken": "your-telegram-bot-token-here"
+}
